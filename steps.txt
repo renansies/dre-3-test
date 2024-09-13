@@ -1,0 +1,9 @@
+1. Crieate file .env com AIRFLOW_UID = 5000
+
+2. Change postgres user in AIRFLOW__DATABASE__SQL_ALCHEMY_CONN and AIRFLOW__CELERY__RESULT_BACKEND
+
+3. change command from postgres to ["CMD", "pg_isready", "-U", "admin", "-d", "airflow"]
+
+4. Add ":" in the end of line 12 from smooth.py
+
+5. change volume ./dag to ./dags
